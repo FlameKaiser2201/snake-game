@@ -18,7 +18,7 @@ python -m venv .venv
 # macOS / Linux
 source .venv/bin/activate
 
-pip install -r requirements.txt
+pip install -r requirements-desktop.txt
 python game.py
 ```
 
@@ -43,4 +43,4 @@ Open [http://127.0.0.1:5000](http://127.0.0.1:5000).
    - **Start command:** `gunicorn app:app`
 4. Deploy. The public URL serves the browser Snake game.
 
-`pygame` is listed in `requirements.txt` for local play. Render only needs Flask and Gunicorn to serve the web game.
+`requirements.txt` is web-only (Flask + Gunicorn) so Render does not try to build pygame. Use `requirements-desktop.txt` for the local pygame game.
