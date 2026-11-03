@@ -6,7 +6,6 @@ cells so the snake glides instead of jumping once per tick.
 
 from __future__ import annotations
 
-import json
 import math
 import random
 import sys
