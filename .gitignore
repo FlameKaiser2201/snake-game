@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+.env
+.idea/
+.vscode/
+*.ds_store
+Thumbs.db
+highscore.txt
+dist/
+build/
+.pytest_cache/
